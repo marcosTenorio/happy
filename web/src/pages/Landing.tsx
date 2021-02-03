@@ -13,14 +13,9 @@ const Landing: React.FC = () => {
         <img src={logoImg} alt='Happy' />
 
         <main>
-          <h1>Leve felicidade para o mundo</h1>
-          <p>Visite orfanatos e mude o dia de muitas criancas</p>
+          <h1>Bring happiness to the world</h1>
+          <p>Visit orphanages and change many children's day</p>
         </main>
-
-        <div className='location'>
-          <strong>Rio do Sul</strong>
-          <span>Santa Catarina</span>
-        </div>
 
         <Link to='/app' className='enter-app'>
           <FiArrowRight size={26} color='rgba(0,0,0, 0.6)' />

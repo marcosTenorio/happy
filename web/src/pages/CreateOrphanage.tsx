@@ -52,7 +52,7 @@ export default function CreateOrphanage() {
 
     await api.post('orphanages', data)
 
-    alert('Cadastro realizado com sucesso')
+    alert('Successful registration')
 
     history.push('/app')
   }
@@ -79,7 +79,7 @@ export default function CreateOrphanage() {
       <main>
         <form onSubmit={handleSubmit} className='create-orphanage-form'>
           <fieldset>
-            <legend>Dados</legend>
+            <legend>Register</legend>
 
             <Map
               center={[53.3229342, -6.2772248]}
@@ -101,7 +101,7 @@ export default function CreateOrphanage() {
             </Map>
 
             <div className='input-block'>
-              <label htmlFor='name'>Nome</label>
+              <label htmlFor='name'>Name</label>
               <input
                 id='name'
                 value={name}
@@ -111,7 +111,7 @@ export default function CreateOrphanage() {
 
             <div className='input-block'>
               <label htmlFor='about'>
-                Sobre <span>Máximo de 300 caracteres</span>
+                About <span>Max 300 characters</span>
               </label>
               <textarea
                 id='name'
@@ -122,7 +122,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className='input-block'>
-              <label htmlFor='images'>Fotos</label>
+              <label htmlFor='images'>Photos</label>
 
               <div className='images-container'>
                 {previewImages.map((image) => {
@@ -143,10 +143,10 @@ export default function CreateOrphanage() {
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Visit</legend>
 
             <div className='input-block'>
-              <label htmlFor='instructions'>Instruções</label>
+              <label htmlFor='instructions'>Instructions</label>
               <textarea
                 id='instructions'
                 value={instructions}
@@ -155,7 +155,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className='input-block'>
-              <label htmlFor='opening_hours'>Horario de atendimento</label>
+              <label htmlFor='opening_hours'>Opening times</label>
               <input
                 id='opening_hours'
                 value={opening_hours}
@@ -164,7 +164,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className='input-block'>
-              <label htmlFor='open_on_weekends'>Atende fim de semana</label>
+              <label htmlFor='open_on_weekends'>Open on weekends?</label>
 
               <div className='button-select'>
                 <button
@@ -172,21 +172,21 @@ export default function CreateOrphanage() {
                   className={open_on_weekends ? 'active' : ''}
                   onClick={() => setOpenOnWeekends(true)}
                 >
-                  Sim
+                  Yes
                 </button>
                 <button
                   type='button'
                   className={!open_on_weekends ? 'active' : ''}
                   onClick={() => setOpenOnWeekends(false)}
                 >
-                  Não
+                  No
                 </button>
               </div>
             </div>
           </fieldset>
 
           <button className='confirm-button' type='submit'>
-            Confirmar
+            Confirm
           </button>
         </form>
       </main>

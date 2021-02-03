@@ -26,7 +26,7 @@ export default function Routes() {
           component={OrphanageDetails}
           options={{
             headerShown: true,
-            header: () => <Header title='Orfanato' showCancel={false} />,
+            header: () => <Header title='Orphanage' showCancel={false} />,
           }}
         />
         <Screen
@@ -34,7 +34,7 @@ export default function Routes() {
           component={SelectMapPosition}
           options={{
             headerShown: true,
-            header: () => <Header title='Selecione no mapa' />,
+            header: () => <Header title='Select on the map' />,
           }}
         />
         <Screen
@@ -42,7 +42,7 @@ export default function Routes() {
           component={OrphanageData}
           options={{
             headerShown: true,
-            header: () => <Header title='Informe os dados' />,
+            header: () => <Header title='Enter data for registration' />,
           }}
         />
       </Navigator>

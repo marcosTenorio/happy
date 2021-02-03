@@ -76,7 +76,7 @@ export default function OrphanagesMap() {
       <View style={styles.footer}>
         <Text
           style={styles.footerText}
-        >{`${orphanages.length} orfanatos encontrados`}</Text>
+        >{`${orphanages.length} orphanages found`}</Text>
 
         <RectButton
           style={styles.createOrphanageButton}
